@@ -43,9 +43,7 @@ function add(){
     }
     document.getElementById("value").value = "";
     document.getElementById("value").focus();
-    // if (box.childElementCount > 3) {
-    //     console.log("disabled");
-    // }
+    window.scrollTo(0, document.body.scrollHeight);
 }
 function deleteItem(e){
     e.target.parentNode.remove();
@@ -60,16 +58,14 @@ function clearAll(){
 }
 function check(e){
     if(e.target.checked){
-        e.target.parentNode.style.textDecoration = "line-through";
-        e.target.parentNode.style.color = "red";
+        e.target.parentNode.style.textDecoration = "line-through wavy #24bffb";
+        e.target.parentNode.style.color = "pink";
         e.target.parentNode.style.fontWeight = "bold";
-        e.target.parentNode.style.opacity = "0.5";
     }
     else{
         e.target.parentNode.style.textDecoration = "none";
         e.target.parentNode.style.color = "black";
         e.target.parentNode.style.fontWeight = "normal";
-        e.target.parentNode.style.opacity = "1";
     }
 }
 
