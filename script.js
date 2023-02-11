@@ -9,9 +9,9 @@ window.onload = function() {
 
     box.innerHTML = localStorage.getItem("todo");
 }
-// window.onbeforeunload = function() {
-//     return "Are you sure you want to leave?";
-// }
+window.onbeforeunload = function() {
+    return "Are you sure you want to leave?";
+}
 
 function add(){
     let name = document.getElementById("value").value;
