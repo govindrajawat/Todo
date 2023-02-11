@@ -1,16 +1,41 @@
 /* Path: style.css */
 body {
+  margin: 0;
+  padding: 0;
   background-color: #f1f1f1;
   font-family: "Roboto", sans-serif;
 }
+.con{
+  text-align: center;
+  max-width: 300px;
+  margin: 0% auto;
+  padding: 10px;
+  border-radius: 40px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  position: sticky;
+  top: 0%;
+}
+
 .container {
   text-align: center;
-  max-width: 500px;
-  margin: 10% auto;
+  max-width: 400px;
+  margin: 5% auto;
   padding: 20px;
   border-radius: 40px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   background-color: #fff;
+}
+.try{
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 40px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  position: sticky;
+  bottom: 0px;
+  margin: 0px auto;
 }
 .container h1 {
   color: #000;
@@ -18,8 +43,8 @@ body {
   font-weight: bold;
   margin: 0 0 20px 0;
 }
-.container .input {
-  width: 60%;
+.input {
+  width: 70%;
   padding: 15px;
   margin: 0px 10px 20px 0px;
   display: inline-block;
@@ -28,11 +53,11 @@ body {
   border-radius: 40px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
-.container .input:focus {
+.input:focus {
   background-color: #ddd;
   outline: none;
 }
-.container .btn {
+.btn {
   border: none;
   color: #000;
   padding: 15px 30px;
@@ -42,37 +67,37 @@ body {
   border-radius: 40px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
-.container .btn:hover {
+.btn:hover {
   background-color: #38f100;
   color: #fff;
 }
-.container .btn:active {
+ .btn:active {
   background-color: #38f100;
   color: #000;
 }
-.container spam {
+spam {
   color: #000;
   font-size: 20px;
   font-weight: bold;
 }
-.container .todo{
+.todo{
   display: flex;
   align-items: center;
   padding: 10px 15px;
   border-bottom: 1px solid #eee;
 }
-.container .delete{
+.delete{
   color: #f00;
   cursor: pointer;
   border-radius: 40px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   padding: 5px 18px;
 }
-.container .delete:hover{
+.delete:hover{
   background-color: #f00;
   color: #fff;
 }
-.container .check{
+.check{
   margin: 0px  20px 0px auto;
   cursor: pointer;
 }

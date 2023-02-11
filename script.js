@@ -9,9 +9,13 @@ window.onload = function() {
 
     box.innerHTML = localStorage.getItem("todo");
 }
+// window.onbeforeunload = function() {
+//     return "Are you sure you want to leave?";
+// }
 
 function add(){
     let name = document.getElementById("value").value;
+
     if(name == ""){
         document.getElementById("error").innerHTML = "Please enter a To-Do item";
         return;
@@ -39,6 +43,9 @@ function add(){
     }
     document.getElementById("value").value = "";
     document.getElementById("value").focus();
+    // if (box.childElementCount > 3) {
+    //     console.log("disabled");
+    // }
 }
 function deleteItem(e){
     e.target.parentNode.remove();
@@ -71,3 +78,5 @@ function save() {
         localStorage.setItem("todo", box.innerHTML);
     }
 }
+
+
